@@ -1,26 +1,55 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
+
+@font-face {
+  font-family: 'BAHNSCHRIFT';
+  src: url('/fonts/BAHNSCHRIFT.woff2') format('woff2');
+  font-weight: 300 700;
+  font-stretch: 75% 100%;
+  font-style: normal;
 }
 
 * {
-  box-sizing: border-box;
+  font-family: 'BAHNSCHRIFT';
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+h1, h2, h3, h4, h5 {
+  font-stretch: condensed;
+}
+
+p {
+  font-stretch: normal;
+}
+
+a {
+  font-stretch: condensed;
+}
+
+.condensed {
+  font-stretch: condensed;
+}
+
+.nav-gradient {
+  opacity: 0;
+  background: linear-gradient(180deg, rgba(17, 22, 29, 0.8) 0%, rgba(17, 22, 29, 0.458713) 50.62%, rgba(17, 22, 29, 0) 100%);
+}
+
+.gradient-bg {
+  background: radial-gradient(69.03% 70.53% at 0% 41.47%, rgba(0, 204, 150, 0.155) 0%, rgba(17, 22, 29, 0.31) 100%);
+  filter: blur(200px)
+}
+
+.secondary-gradient-bg {
+  background: radial-gradient(44.37% 44.64% at 100% 56.94%, rgba(0, 204, 150, 0.14) 0%, rgba(0, 204, 150, 0) 100%)
+}
+
+.bg-grid-item {
+  box-shadow: -1px 0px 0px rgba(217, 217, 217, .5);
+  opacity: 0.1;
+}
+
+.bg-grid-item:last-child {
+  box-shadow: 1px 0px 0px rgba(217, 217, 217, .5), -1px 0px 0px rgba(217, 217, 217, .5);
 }
