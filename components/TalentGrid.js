@@ -68,6 +68,7 @@ const TalentGrid = () => {
               creators.map(({name, imgUrl, ytSubs, twFollowers}, idx) => {
                 return (
                   <div
+                    key={idx}
                     className={`bg-black mr-[1px] mb-[1px] p-4 pb-[100%] md:pb-0 md:min-h-talent-item relative overflow-hidden 
                       ${idx === 0 ? 'md:col-span-2 md:row-span-1' : ''}
                       ${idx === 1 ? 'md:col-span-2 md:row-span-2' : ''}

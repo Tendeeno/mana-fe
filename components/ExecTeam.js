@@ -65,7 +65,9 @@ const ExecTeam = ({ setOpenExecModal, setCurrentExec }) => {
           <div className="flex flex-wrap md:flex-nowrap">
             { execTeam.map(({imgURL, name, position}, idx) => {
               return (
-                <div className="w-full md:w-1/4 pr-[1px] cursor-pointer relative"
+                <div 
+                  key={idx}
+                  className="w-full md:w-1/4 pr-[1px] cursor-pointer relative"
                   onMouseOut={handleMouseOut}
                   onMouseOver={handleMouseOver}
                   onClick={() => {handleclick(idx)}}

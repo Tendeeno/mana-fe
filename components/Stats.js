@@ -24,7 +24,9 @@ const Stats = () => {
           { 
             statistics.map(({label, value}, idx) => {
               return (
-                <div className="text-left w-1/2 mb-12">
+                <div 
+                  key={idx}
+                  className="text-left w-1/2 mb-12">
                   <span className="md:text-3xl text-lg font-bold block uppercase text-gray-text">{label}</span>
                   <span className="md:text-8xl text-2xl font-bold block text-mana-green">{value}</span>
                 </div>

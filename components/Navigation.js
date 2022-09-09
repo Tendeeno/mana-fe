@@ -24,6 +24,7 @@ const Navigation = () => {
                   return (
                     <a
                       id="nav-item"
+                      key={idx}
                       className={`text-xl sm:text-2xl sm:min-w-[100px] font-normal uppercase text-white opacity-0 transition-opacity duration-500
                         ${idx === 0 && idx !== 4 ? 'text-left' : 'text-center'}
                         ${idx === 4 ? 'text-right' : ''}
@@ -33,7 +34,9 @@ const Navigation = () => {
                   )
                 } else {
                   return (
-                    <a href={href}>
+                    <a 
+                      key={idx}
+                      href={href}>
                       <ManaLogo />
                     </a>
                   )

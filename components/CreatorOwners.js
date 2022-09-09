@@ -57,6 +57,7 @@ const CreatorOwners = () => {
         { creatorOwners.map(({imgURL}, idx) => {
           return (
             <div 
+              key={idx}
               className={`owner left-4 right-4 pr-[1px] cursor-pointer sm:block lg:w-1/3
                 ${ idx === selectedIndex ? 'z-30' : 'z-0'}
               `}
@@ -69,7 +70,9 @@ const CreatorOwners = () => {
       <div className="w-full pr-[1px] relative h-full grid grid-cols-1 grow-rows-1 lg:w-1/4 ">
         { creatorOwners.map(({name, shortBio, subCount, imgURL}, idx) => {
           return (
-            <div className={`owner mb-6 sm:pl-2 lg:pl-4 xl:pl-6 transition-opacity duration-300 ${ idx === selectedIndex ? 'opacity-100' : 'opacity-0'}`}>
+            <div
+              key={idx}
+              className={`owner mb-6 sm:pl-2 lg:pl-4 xl:pl-6 transition-opacity duration-300 ${ idx === selectedIndex ? 'opacity-100' : 'opacity-0'}`}>
               <span className="text-mana-yellow uppercase text-base font-regular condensed leading-normal block">Creator Owner | {subCount} Subscribers</span>
               <h3 className="font-semibold condensed text-white text-3xl leading-tight mb-4">{name}</h3>
               <p className="text-gray-text text-lg font-light leading-normal">{shortBio}</p>
@@ -80,6 +83,7 @@ const CreatorOwners = () => {
           { creatorOwners.map(({name, shortBio, subCount, imgURL}, idx) => {
             return (
               <span
+                key={idx}
                 className={`condensed text-sm leading-normal cursor-pointer mr-4 transition-opacity duration-300 ${ idx === selectedIndex ? 'text-mana-green' : 'text-gray-text'}`}
                 onClick={() => {handleClick(idx)}}  
               >
