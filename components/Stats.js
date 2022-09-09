@@ -15,18 +15,18 @@ const Stats = () => {
         <div className="bg-grid-item w-1/4"></div>
         <div className="bg-grid-item w-1/4"></div>
       </div>
-      <div className="px-20 py-24 flex relative z-30">
-        <div className="w-1/2">
-        <span className="text-3xl font-bold block uppercase text-gray-text">Creator</span>
-        <span className="text-8xl font-bold block uppercase text-white">Owned</span>
+      <div className="px-4 relative z-40 sm:flex lg:px-16 xl:px-20 sm:pb-24 py-12 lg:py-32">
+        <div className="md:w-1/2 w-full">
+        <span className="md:text-3xl text-lg font-bold block uppercase text-gray-text">Creator</span>
+        <span className="md:text-8xl text-2xl font-bold block uppercase text-white">Owned</span>
         </div>
         <div className="flex flex-wrap w-1/2">
           { 
             statistics.map(({label, value}, idx) => {
               return (
                 <div className="text-left w-1/2 mb-12">
-                  <span className="text-3xl font-bold block uppercase text-gray-text">{label}</span>
-                  <span className="text-8xl font-bold block text-mana-green">{value}</span>
+                  <span className="md:text-3xl text-lg font-bold block uppercase text-gray-text">{label}</span>
+                  <span className="md:text-8xl text-2xl font-bold block text-mana-green">{value}</span>
                 </div>
               )
 

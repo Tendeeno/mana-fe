@@ -52,25 +52,31 @@ const CreatorOwners = () => {
   },[selectedIndex])
 
   return (
-    <div className="flex px-20 pb-24 relative z-40">
-      { creatorOwners.map(({imgURL}, idx) => {
-        return (
-          <div className="w-1/4 pr-[1px] cursor-pointer" onClick={() => {handleClick(idx)}}>
-            <img src={imgURL} className={`w-full h-auto ${ idx === selectedIndex ? '' : 'grayscale'}`} />
-          </div>
-        )
-      })}
-      <div className="w-1/4 pr-[1px] relative">
+    <div className="px-4 relative z-40 sm:flex lg:px-16 xl:px-20 sm:pb-24 py-12 lg:py-32">
+      <div className="w-full mb-6 relative grid grid-cols-1 grid-rows-1 lg:flex lg:w-3/4">
+        { creatorOwners.map(({imgURL}, idx) => {
+          return (
+            <div 
+              className={`owner left-4 right-4 pr-[1px] cursor-pointer sm:block lg:w-1/3
+                ${ idx === selectedIndex ? 'z-30' : 'z-0'}
+              `}
+              onClick={() => {handleClick(idx)}}>
+              <img src={imgURL} className={`w-full h-auto ${ idx === selectedIndex ? '' : 'grayscale'}`} />
+            </div>
+          )
+        })}
+      </div>
+      <div className="w-full pr-[1px] relative h-full grid grid-cols-1 grow-rows-1 lg:w-1/4 ">
         { creatorOwners.map(({name, shortBio, subCount, imgURL}, idx) => {
           return (
-            <div className={`absolute top-0 left-0 right-0 pl-6 transition-opacity duration-300 ${ idx === selectedIndex ? 'opacity-100' : 'opacity-0'}`}>
+            <div className={`owner mb-6 sm:pl-2 lg:pl-4 xl:pl-6 transition-opacity duration-300 ${ idx === selectedIndex ? 'opacity-100' : 'opacity-0'}`}>
               <span className="text-mana-yellow uppercase text-base font-regular condensed leading-normal block">Creator Owner | {subCount} Subscribers</span>
               <h3 className="font-semibold condensed text-white text-3xl leading-tight mb-4">{name}</h3>
               <p className="text-gray-text text-lg font-light leading-normal">{shortBio}</p>
             </div>
           )
         })}
-        <div className="absolute bottom-0 left-0 right-0 pl-6">
+        <div className="sm:pl-2 lg:pl-4 xl:pl-6">
           { creatorOwners.map(({name, shortBio, subCount, imgURL}, idx) => {
             return (
               <span

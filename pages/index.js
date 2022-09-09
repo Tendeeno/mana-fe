@@ -6,8 +6,10 @@ import Stats from '../components/Stats'
 import TalentGrid from '../components/TalentGrid'
 import ExecTeam from '../components/ExecTeam'
 import Services from '../components/Services'
+import ContactUs from '../components/ContactUs'
 import styles from '../styles/Home.module.css'
 import { useEffect, useState} from 'react'
+import ExecutiveModal from '../components/ExecutiveModal'
 
 export default function Home() {
   let scrolled = false;
@@ -15,6 +17,9 @@ export default function Home() {
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
   }, [])
+
+  const [openExecModal, setOpenExecModal] = useState(false)
+  const [currentExec, setCurrentExec] = useState({})
 
   const animateLogo = (direction) => {
     const largeLogo = document.querySelector('#mana-large')
@@ -56,8 +61,10 @@ export default function Home() {
       <About />
       <Stats />
       <TalentGrid />
-      <ExecTeam />
+      <ExecTeam setOpenExecModal={setOpenExecModal} setCurrentExec={setCurrentExec}/>
       <Services />
+      <ExecutiveModal openExecModal={openExecModal} setOpenExecModal={setOpenExecModal} currentExec={currentExec}/>
+      <ContactUs />
     </>
   )
 }

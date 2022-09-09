@@ -11,6 +11,11 @@
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+  background: #11161D;
+}
+
 * {
   font-family: 'BAHNSCHRIFT';
 }
@@ -52,4 +57,9 @@ a {
 
 .bg-grid-item:last-child {
   box-shadow: 1px 0px 0px rgba(217, 217, 217, .5), -1px 0px 0px rgba(217, 217, 217, .5);
+}
+
+
+.owner {
+  grid-area: 1 / 1 / 1 / 1;
 }
