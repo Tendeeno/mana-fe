@@ -20,7 +20,7 @@ const About = () => {
             <p className="text-lg md:text-2xl font-regular text-gray-text leading-normal mb-9">The amount of time it takes to make a &quot;small change&quot; in your videos.</p>
             <p className="text-lg md:text-2xl font-regular text-gray-text leading-normal mb-9">The balance between creating  authentic partnerships while staying true to your audience.</p>
             <p className="text-lg md:text-2xl font-regular text-white leading-normal mb-9">We know creators because we&apos;re built by creators.</p>
-            <p className="text-lg md:text-2xl font-regular text-gray-text leading-normal mb-9">This isn't a talking point. This isn't a marketing tactic.</p>
+            <p className="text-lg md:text-2xl font-regular text-gray-text leading-normal mb-9">This isn&apos;t a talking point. This isn&apos;t a marketing tactic.</p>
             <p className="text-lg md:text-2xl font-regular text-gray-text leading-normal mb-9">Our goal is simple. MANA wants to be your resource so you can use all of your abilities.</p>
             <p className="text-lg md:text-2xl font-regular text-white leading-normal mb-9">This is MANA Talent.</p>
           </div>
