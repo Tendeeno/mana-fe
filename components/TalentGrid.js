@@ -94,7 +94,7 @@ const TalentGrid = () => {
                     <div id="creator-stats" className="flex opacity-0 transition-all duration-300 absolute z-30 left-3 bottom-3">
                       {
                         ytSubs !== '' &&
-                        <a href={ytLink} target="_blank" referrerPolicy="noreferrer" className="flex pr-2 text-white text-base condensed font-semibold items-center">
+                        <a href={ytLink} target="_blank" rel="noreferrer" className="flex pr-2 text-white text-base condensed font-semibold items-center">
                           <Youtube/>
                           <span className="pl-1">
                             {ytSubs} Subscribers
@@ -103,21 +103,21 @@ const TalentGrid = () => {
                       }
                       {
                         twFollowers !== '' &&
-                        <a href={twLink} target="_blank" referrerPolicy="noreferrer" className="flex pr-2 text-white text-base condensed font-semibold items-center">
+                        <a href={twLink} target="_blank" rel="noreferrer" className="flex pr-2 text-white text-base condensed font-semibold items-center">
                           <TwitterSmall />
                           <span className="pl-1">{twFollowers} Followers</span>
                         </a>
                       }
                       {
                         twitchFollowers !== '' &&
-                        <a href={twitchURL} target="_blank" referrerPolicy="noreferrer" className="flex pr-2 text-white text-base condensed font-semibold items-center">
+                        <a href={twitchURL} target="_blank" rel="noreferrer" className="flex pr-2 text-white text-base condensed font-semibold items-center">
                           <Twitch />
                           <span className="pl-1">{twitchFollowers} Followers</span>
                         </a>
                       }
                       {
                         instaFollowers !== '' &&
-                        <a href={instaURL} target="_blank" referrerPolicy="noreferrer" className="flex pr-2 text-white text-base condensed font-semibold items-center">
+                        <a href={instaURL} target="_blank" rel="noreferrer" className="flex pr-2 text-white text-base condensed font-semibold items-center">
                           <IG />
                           <span className="pl-1">{instaFollowers} Followers</span>
                         </a>
