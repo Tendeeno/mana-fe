@@ -5,19 +5,19 @@ const CreatorOwners = () => {
   const creatorOwners = [
     {
       name: 'MoistCr1itikal',
-      shortBio: 'Charlie is a player for this team and this is some filler copy for a bio. Whether you’re a brand looking to work with influencers or are a creator looking to grow your career, we can help.',
+      shortBio: 'Charlie aka Penguinz0 aka MoistCr1tikal started his channel on youTube when he was 11 years old. As of today he has over 16 million followers across all platforms and has cemented himself as one of the titans of both YouTube and Twitch. Charlie is often referred to as one of the most genuine and thoughtful creators and ensures that the company always maintains the same “creator first” principles.',
       subCount: '11.3M',
       imgURL: '/creatorOwners/charlie.png'
     },
     {
       name: 'GibiASMR',
-      shortBio: 'Gibi is a player for this team and this is some filler copy for a bio. Whether you’re a brand looking to work with influencers or are a creator looking to grow your career, we can help.',
+      shortBio: 'Gina, most affectionately known as Gibi to her 4.3 million YouTube subscribers, began her ASMR channel during her senior year at Northwestern University. An avid and longtime consumer of ASMR, Gibi wanted to integrate her love for cosplay, creative video, and immersion into a then very niche community on YouTube. Over 6 years and almost one thousand videos later, Gibi has helped champion ASMR to where it is today.',
       subCount: '3.2M',
       imgURL: '/creatorOwners/gibi.png'
     },
     {
       name: 'JimmyHere',
-      shortBio: 'JimmyHere is a player for this team and this is some filler copy for a bio. Whether you’re a brand looking to work with influencers or are a creator looking to grow your career, we can help.',
+      shortBio: 'Back in 2016 JimmyHere stumbled into the world of content creation by creating the viral meme “It is Wednesday my Dudes” on Vine. Since then it’s been looped over 83M times on Vine and garnered over 35M+ views on YT. Currently, Jimmy has concentrated on building his content on Youtube & Twitch, amassing over 1.3 million subscribers and 300k+ followers respectively.',
       subCount: '1.4M',
       imgURL: '/creatorOwners/jimmy.png'
     },
@@ -75,7 +75,7 @@ const CreatorOwners = () => {
               className={`owner mb-6 sm:pl-2 lg:pl-4 xl:pl-6 transition-opacity duration-300 ${ idx === selectedIndex ? 'opacity-100' : 'opacity-0'}`}>
               <span className="text-mana-yellow uppercase text-base font-regular condensed leading-normal block">Creator Owner | {subCount} Subscribers</span>
               <h3 className="font-semibold condensed text-white text-3xl leading-tight mb-4">{name}</h3>
-              <p className="text-gray-text text-lg font-light leading-normal">{shortBio}</p>
+              <p className="text-gray-text text-base font-light leading-normal">{shortBio}</p>
             </div>
           )
         })}
