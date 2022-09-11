@@ -14,7 +14,7 @@ const Stats = () => {
     {brand: 'Reeses', imgURL: '/brands/reeses.png'},
     {brand: 'Honey', imgURL: '/brands/honey.png'},
     {brand: 'Harrys', imgURL: '/brands/harrys.png'},
-    {brand: 'ScentBird', imgURL: '/brands/scentBird.png'},
+    {brand: 'ScentBird', imgURL: '/brands/scentbird.png'},
     {brand: 'Athletic Greens', imgURL: '/brands/athleticgreens.png'},
   ]
 
