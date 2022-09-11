@@ -9,16 +9,16 @@ const ContactUs = () => {
   const [side, setSide] = useState('creator')
   const [name, setName] = useState('')
   const [companyName, setCompanyName] = useState('')
-  const [socialLink, setSocialLink] = useState('')
+  const [socialAmount, setSocialAmount] = useState('')
   const [email, setEmail] = useState('')
   const [reason, setReason] = useState('request') // request, other
   const [note, setNote] = useState('')
+  const [error, setError] = useState('')
 
   useEffect(() => {
     // console.log(companyName)
-    console.log(name, socialLink, email, note)
     if (side === 'creator') {
-      if (!name || !socialLink || !email || !note) {
+      if (!name || !socialAmount || !email || !note) {
         setIsDisabled(true)
       } else {
         setIsDisabled(false)
@@ -32,27 +32,44 @@ const ContactUs = () => {
         setIsDisabled(false)
       }
     }
-  }, [companyName, name, socialLink, email, reason, note])
+  }, [companyName, name, socialAmount, email, reason, note])
 
 
   useEffect(() => {
     setName('')
     setEmail('')
-    setSocialLink('')
+    setSocialAmount('')
     setCompanyName('')
     setReason('request')
     setNote('')
   }, [side])
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    if (side === 'creator') {
-      console.log(side, name, socialLink, email, note)
+      
+    const res = await fetch("/api/sendgrid", {
+      body: JSON.stringify({
+        side: side,
+        name: name,
+        email: email,
+        companyName: companyName,
+        socialAmount: socialAmount,
+        reason: reason,
+        note: note,
+      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+      method: "POST",
+    });
+
+    const { error } = await res.json();
+    if (error) {
+      setError('Sorry! Your Contact submission failed. Please try again and if it does not work, contact info@manatalentgroup.com directly!')
+      console.log(error);
+      return;
     }
-    
-    if (side === 'brand') {
-      console.log(side, name, companyName, email, reason, note)
-    }
+    setError('Your submission was received! We will be in touch with you shortly.')
   }
 
 
@@ -73,6 +90,9 @@ const ContactUs = () => {
             </div>
           </div>
           <div className="w-full md:w-1/2 border border-mana-green bg-dark p-6 md:p-8">
+            { error &&
+              <div className="bg-mana-green text-dark p-4 w-full mb-4 font-semibold text-base">{error}</div>
+            }
             <form onSubmit={handleSubmit}>
               <div>
                 <label className="block text-gray-text uppercase condensed text-base mb-1">You are a:</label>
@@ -123,13 +143,13 @@ const ContactUs = () => {
                     />
                   </div>
                   <div className="mb-6">
-                    <label className="block text-gray-text uppercase condensed text-base mb-1">Link to Your Most Popular Social Profile:</label>
+                    <label className="block text-gray-text uppercase condensed text-base mb-1">Subscriber Count:</label>
                     <input
                       type="text"
-                      value={socialLink}
+                      value={socialAmount}
                       className=" border border-gray-600 text-base md:text-xl text-white p-3 bg-transparent w-full outline-none placeholder:text-gray-text"
-                      placeholder="youtube.com/"
-                    onChange={(e) => {setSocialLink(e.target.value)}}
+                      placeholder="100,000"
+                    onChange={(e) => {setSocialAmount(e.target.value)}}
                       />
                   </div>
                   <div className="mb-6">
