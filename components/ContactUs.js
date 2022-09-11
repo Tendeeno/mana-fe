@@ -85,8 +85,8 @@ const ContactUs = () => {
           <h2 className="text-white uppercase font-bold text-4xl md:text-6xl text-left mb-6">Get In Touch</h2>
             <p className="text-base md:text-xl font-light text-gray-text leading-normal mb-9">Fill out the form or send us an email if you are a creator interested in being represented by MANA or a brand looking to advertise.</p>
             <div className="flex">
-              <a href="https://twitter.com/manatalentgg?s=11&t=NNYvVv9dYWVMojhDXNOVfA" className="text-white flex pr-4 text-base leading-tight items-center"><Twitter/></a>
-              <a href="https://www.linkedin.com/company/mana-talent-gg/" className="text-white flex pr-4 text-base leading-tight items-center"><Linkedin /></a>
+              <a target="_blank" rel="noreferrer" href="https://twitter.com/manatalentgg?s=11&t=NNYvVv9dYWVMojhDXNOVfA" className="text-white flex pr-4 text-base leading-tight items-center"><Twitter/></a>
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/mana-talent-gg/" className="text-white flex pr-4 text-base leading-tight items-center"><Linkedin /></a>
             </div>
           </div>
           <div className="w-full md:w-1/2 border border-mana-green bg-dark p-6 md:p-8">
