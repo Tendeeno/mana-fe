@@ -58,7 +58,7 @@ const ContactUs = () => {
 
 
   return (
-    <div className="relative bg-dark" id="About">
+    <div className="relative bg-dark" id="Contact">
       <div className="gradient-bg absolute inset-0 z-10"></div>
       <div className="secondary-gradient-bg absolute inset-0 z-10"></div>
       <div className="max-w-[1440px] mx-auto relative">
@@ -217,8 +217,6 @@ const ContactUs = () => {
                       className="hidden"
                     />
                   </div>
-                  {
-                  reason === 'other' &&
                   <div className="mb-6">
                     <label className="block text-gray-text uppercase condensed text-base mb-1">NOTE:</label>
                     <textarea
@@ -230,7 +228,6 @@ const ContactUs = () => {
                       onChange={(e) => {setNote(e.target.value)}}
                       />
                   </div>
-                  }
                 </>
               }
               <button

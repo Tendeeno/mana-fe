@@ -19,7 +19,7 @@ const CreatorOwners = () => {
       name: 'JimmyHere',
       shortBio: 'Back in 2016 JimmyHere stumbled into the world of content creation by creating the viral meme “It is Wednesday my Dudes” on Vine. Since then it’s been looped over 83M times on Vine and garnered over 35M+ views on YT. Currently, Jimmy has concentrated on building his content on Youtube & Twitch, amassing over 1.3 million subscribers and 300k+ followers respectively.',
       subCount: '1.4M',
-      imgURL: '/creatorOwners/jimmy.png'
+      imgURL: '/creatorOwners/jim.png'
     },
   ]
 

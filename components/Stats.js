@@ -61,11 +61,11 @@ const Stats = () => {
       <div className="max-w-[1440px] mx-auto relative">
         <Columns />
         <div className="px-4 relative z-40 lg:px-16 xl:px-20 sm:pb-24 py-12 lg:py-32">
-          <div className="flex justify-between items-center mb-12">
+          <div className="flex justify-between items-center mb-6 md:mb-12">
             <h2 className="text-white uppercase font-bold text-4xl md:text-6xl text-left">Our Brand Partners</h2>
             
           </div>
-          <div className="grid grid-cols-4 items-start mb-12">
+          <div className="grid md:grid-cols-4 grid-cols-2 items-start mb-6 md:mb-12">
             { 
               activeLogos.map(({brand, imgURL}, idx) => {
                 return (
@@ -73,7 +73,7 @@ const Stats = () => {
                     key={idx}
                     className={`text-left w-full`}
                   >
-                    <img src={imgURL} className="w-full h-auto max-w-[214px]"/>
+                    <img src={imgURL} className="w-full h-auto mb-6 md:mb-0 max-w-[140px] sm:max-w-[180px] md:max-w-[140px] xl:max-w-[214px]"/>
                     {/* <span className="md:text-3xl text-lg font-bold block uppercase text-gray-text">{brand}</span> */}
                   </div>
                 )
@@ -86,9 +86,9 @@ const Stats = () => {
                 return (
                   <div 
                     key={idx}
-                    className="text-left w-1/4 mb-12">
-                    <span className="md:text-xl text-lg font-bold block uppercase text-gray-text">{label}</span>
-                    <span className="md:text-8xl text-2xl font-bold block text-mana-green">{value}</span>
+                    className="text-left md:w-1/4 w-1/2 mb-6 md:mb-12">
+                    <span className="xl::text-xl lg:text-lg md:text-base font-bold block uppercase text-gray-text">{label}</span>
+                    <span className="xl:text-8xl lg:text-7xl text-5xl font-bold block text-mana-green">{value}</span>
                   </div>
                 )
 

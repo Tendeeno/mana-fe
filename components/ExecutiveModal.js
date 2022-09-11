@@ -1,6 +1,7 @@
 import Close from "../public/svgs/close";
-const ExecutiveModal = ({openExecModal, currentExec, setOpenExecModal}) => {
+import LinkedIn from '../public/svgs/linkedin'
 
+const ExecutiveModal = ({openExecModal, currentExec, setOpenExecModal}) => {
   return (
     openExecModal ?
     <div className="fixed inset-0 bg-dark z-50">
@@ -18,7 +19,12 @@ const ExecutiveModal = ({openExecModal, currentExec, setOpenExecModal}) => {
           <div className="md:pl-6 py-4 md:py-0 relative w-full md:w-1/2">
               <div className="absolute right-0 top-7 md:top-2 cursor-pointer" onClick={() => {setOpenExecModal(false)}}><Close /></div>
               <h2 className="text-white uppercase font-bold text-6xl text-left mb-1">{currentExec.name}</h2>
-              <p className="text-lg leading-normal font-light text-white uppercase condensed mb-4">{currentExec.position}</p>
+              <div className="flex">
+                <p className="text-lg leading-normal font-light text-white uppercase condensed mb-4">{currentExec.position}</p>
+                <a className="ml-3" href={currentExec.liLink} target="_blank" rel="noreferrer">
+                  <LinkedIn />
+                </a>
+              </div>
               <p className="text-xl leading-normal font-light text-gray-text">{currentExec.bio}</p>
           </div>
 
