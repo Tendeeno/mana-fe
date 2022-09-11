@@ -59,7 +59,7 @@ const TalentGrid = () => {
         <div className="px-4 relative z-40 lg:px-16 xl:px-20 sm:pb-24 py-12 lg:py-32">
           <div className="flex justify-between items-center mb-6">
             <h2 className="text-white uppercase font-bold text-4xl md:text-6xl text-left">Our Talent</h2>
-            <a href="#ContactUs"
+            <a href="#Contact"
               className="border border-mana-green text-mana-green block py-3 px-4 condensed uppercase leading-none
                 md:text-base text-sm
                 hover:bg-mana-green hover:text-dark transition-all

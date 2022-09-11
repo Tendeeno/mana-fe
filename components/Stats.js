@@ -95,7 +95,7 @@ const Stats = () => {
               })
             }
           </div>
-          <a href=""
+          <a href="#Contact"
               className="border border-mana-green text-mana-green inline-block py-3 px-4 condensed uppercase leading-none
                 md:text-base text-sm
                 hover:bg-mana-green hover:text-dark transition-all
