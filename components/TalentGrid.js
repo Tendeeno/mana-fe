@@ -220,7 +220,7 @@ const TalentGrid = () => {
               Request Our Full Roster
             </a>
           </div>
-          <div className="grid w-full grid-cols-2 md:grid-cols-4 md:grid-rows-9 auto-rows-fr">
+          <div className="grid w-full grid-cols-2 md:grid-cols-4 md:grid-rows-6 auto-rows-fr">
             {creators.map(
               (
                 {
