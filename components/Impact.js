@@ -24,6 +24,10 @@ const Impact = () => {
         <Columns />
         <div className="relative z-40 px-4 py-12 lg:px-16 xl:px-20 sm:pb-24 lg:py-32">
           <div className="mb-6 md:mb-12">
+            <img
+              src="/impact-logo.png"
+              className="w-full mt-6 mb-4 md:w-6/12 md:mt-0"
+            />
             <h2 className="text-4xl font-bold text-left text-white uppercase md:text-6xl">
               MANA Impact
             </h2>

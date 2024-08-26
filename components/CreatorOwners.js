@@ -6,22 +6,29 @@ const CreatorOwners = () => {
       name: "MoistCr1itikal",
       shortBio:
         "Charlie aka Penguinz0 aka MoistCr1tikal started his channel on youTube when he was 11 years old. As of today he has over 16 million followers across all platforms and has cemented himself as one of the titans of both YouTube and Twitch. Charlie is often referred to as one of the most genuine and thoughtful creators and ensures that the company always maintains the same “creator first” principles.",
-      subCount: "14.1M",
+      subCount: "15.8M",
       imgURL: "/creatorOwners/charlie.png",
     },
     {
       name: "GibiASMR",
       shortBio:
         "Gina, most affectionately known as Gibi to her 4.3 million YouTube subscribers, began her ASMR channel during her senior year at Northwestern University. An avid and longtime consumer of ASMR, Gibi wanted to integrate her love for cosplay, creative video, and immersion into a then very niche community on YouTube. Over 6 years and almost one thousand videos later, Gibi has helped champion ASMR to where it is today.",
-      subCount: "4.85M",
+      subCount: "5M",
       imgURL: "/creatorOwners/gibi.png",
     },
     {
       name: "JimmyHere",
       shortBio:
         "Back in 2016 JimmyHere stumbled into the world of content creation by creating the viral meme “It is Wednesday my Dudes” on Vine. Since then it’s been looped over 83M times on Vine and garnered over 35M+ views on YT. Currently, Jimmy has concentrated on building his content on Youtube & Twitch, amassing over 1.3 million subscribers and 300k+ followers respectively.",
-      subCount: "1.57M",
+      subCount: "1.6M",
       imgURL: "/creatorOwners/jim.png",
+    },
+    {
+      name: "Wendigoon",
+      shortBio:
+        "Isaiah Nichols is a YouTuber known for macabre and spooky stories. Many of his videos share real-life tales of terror and his posts include everything from famous conspiracy theories to Biblical lore & literature and everything in between. He has earned more than 3.8 million subscribers on his Wendigoon channel.",
+      subCount: "3.8m",
+      imgURL: "/creatorOwners/wendi.png",
     },
   ];
 
