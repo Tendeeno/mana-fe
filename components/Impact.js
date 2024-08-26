@@ -28,9 +28,9 @@ const Impact = () => {
               src="/impact-logo.png"
               className="w-full mt-6 mb-4 md:w-6/12 md:mt-0"
             />
-            <h2 className="text-4xl font-bold text-left text-white uppercase md:text-6xl">
+            {/* <h2 className="text-4xl font-bold text-left text-white uppercase md:text-6xl">
               MANA Impact
-            </h2>
+            </h2> */}
             <p className="text-xl font-light leading-normal text-gray-text">
               In 2022 MANA launched its Impact division, a department
               exclusively focused on combining creators with giving back to
