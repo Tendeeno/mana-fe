@@ -28,7 +28,7 @@ const CreatorOwners = () => {
       shortBio:
         "Isaiah Nichols is a YouTuber known for macabre and spooky stories. Many of his videos share real-life tales of terror and his posts include everything from famous conspiracy theories to Biblical lore & literature and everything in between. He has earned more than 3.8 million subscribers on his Wendigoon channel.",
       subCount: "3.8m",
-      imgURL: "/creatorOwners/wendi.png",
+      imgURL: "/creatorOwners/wendi-owner.png",
     },
   ];
 
