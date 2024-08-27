@@ -36,7 +36,7 @@ const Impact = () => {
               exclusively focused on combining creators with giving back to
               communities in need. In less than one short year since its
               inception IMPACT has already successfully ran two fundraising
-              campaigns raising a combined total of over $146,419 for
+              campaigns raising a combined total of over $293,000 for
               organizations in need.
             </p>
           </div>

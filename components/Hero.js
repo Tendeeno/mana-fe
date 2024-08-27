@@ -13,7 +13,7 @@ const Hero = () => {
         loop
         playsInline
         poster="/videos/vibgdeobg.png">
-        <source src="/videos/bg-mana.mp4" type="video/mp4" />
+        <source src="/videos/new-bg.mp4" type="video/mp4" />
         {/* poster="one-does-not-simply.jpg" */}
         {/* <source data-src="one-does-not-simply.mp4" type="video/mp4" /> */}
       </video>
