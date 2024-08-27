@@ -12,8 +12,8 @@ const Hero = () => {
         muted
         loop
         playsInline
-        poster="/videos/videobg.png">
-        <source src="/videos/background.mp4" type="video/mp4" />
+        poster="/videos/vibgdeobg.png">
+        <source src="/videos/bg-mana.mp4" type="video/mp4" />
         {/* poster="one-does-not-simply.jpg" */}
         {/* <source data-src="one-does-not-simply.mp4" type="video/mp4" /> */}
       </video>
