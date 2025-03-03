@@ -13,10 +13,12 @@ const Stats = () => {
     { brand: "Gameloft", imgURL: "/brands/gameloft.png" },
     { brand: "Control", imgURL: "/brands/ctrl.png" },
     { brand: "Opera GX", imgURL: "/brands/opera.png" },
+    { brand: "Holzkern", imgURL: "/brands/holzkern.png" },
+    { brand: "Fabletics", imgURL: "/brands/fabletics.png" },
     // {brand: 'Reeses', imgURL: '/brands/reeses.png'},
-    { brand: "Honey", imgURL: "/brands/honey.png" },
+    // { brand: "Honey", imgURL: "/brands/honey.png" },
     { brand: "Harrys", imgURL: "/brands/harrys.png" },
-    { brand: "ScentBird", imgURL: "/brands/scentbird.png" },
+    // { brand: "ScentBird", imgURL: "/brands/scentbird.png" },
     { brand: "AG1", imgURL: "/brands/ag1.png" },
   ];
 
