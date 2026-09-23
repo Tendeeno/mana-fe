@@ -7,8 +7,7 @@ function ManaLogo() {
       fill="none"
       viewBox="0 0 105 26"
       alt="mana talent group"
-      id="nav-item"
-      className="opacity-0 transition-opacity delay-200 duration-800"
+      className="nav-item transition-opacity delay-200 duration-800"
     >
       <path
         fill="#fff"

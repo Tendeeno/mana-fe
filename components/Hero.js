@@ -74,15 +74,15 @@ const Hero = () => {
       </Head>
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-center bg-cover"
+        className="absolute inset-0 bg-center bg-cover pointer-events-none"
         style={{ backgroundImage: "url('/videos/videobg.png')" }}
       />
-      <div className="absolute inset-0 z-20 bg-dark bg-opacity-40"></div>
+      <div aria-hidden="true" className="absolute inset-0 z-20 bg-dark bg-opacity-40 pointer-events-none"></div>
       {videoSrc && (
         <video
           ref={videoRef}
           aria-hidden="true"
-          className={`absolute inset-0 z-10 object-cover object-center w-full h-screen transition-opacity duration-500 ${
+          className={`absolute inset-0 z-10 object-cover object-center w-full h-screen pointer-events-none transition-opacity duration-500 ${
             isPlaying ? "opacity-100" : "opacity-0"
           }`}
           muted
@@ -101,7 +101,8 @@ const Hero = () => {
       <Navigation />
       <div
         id="mana-large"
-        className="absolute z-30 flex justify-center w-full px-20 mx-auto transition-transform duration-700 -bottom-28">
+        aria-hidden="true"
+        className="absolute z-30 flex justify-center w-full px-20 mx-auto transition-transform duration-700 pointer-events-none -bottom-28">
         <MANAOutline />
       </div>
     </div>

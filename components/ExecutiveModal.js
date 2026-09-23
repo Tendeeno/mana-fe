@@ -1,3 +1,4 @@
+import ContentImage from "./ContentImage";
 import Close from "../public/svgs/close";
 import LinkedIn from '../public/svgs/linkedin'
 
@@ -14,7 +15,7 @@ const ExecutiveModal = ({openExecModal, currentExec, setOpenExecModal}) => {
         </div>
         <div className="h-full relative md:flex">
           <div className="w-full md:w-1/2">
-            <img src={currentExec.imgURL} className="w-full"/>
+            <ContentImage src={currentExec.imgURL} alt={currentExec.name} sizes="(max-width: 767px) 100vw, 50vw" className="w-full"/>
           </div>
           <div className="md:pl-6 py-4 md:py-0 relative w-full md:w-1/2">
               <div className="absolute right-0 top-7 md:top-2 cursor-pointer" onClick={() => {setOpenExecModal(false)}}><Close /></div>

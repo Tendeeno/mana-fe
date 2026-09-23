@@ -1,0 +1,314 @@
+{
+  "/brands/ag1.png": {
+    "width": 488,
+    "height": 136
+  },
+  "/brands/athleticgreens.png": {
+    "width": 488,
+    "height": 136
+  },
+  "/brands/audible.png": {
+    "width": 488,
+    "height": 136
+  },
+  "/brands/ctrl.png": {
+    "width": 488,
+    "height": 136
+  },
+  "/brands/fabletics.png": {
+    "width": 488,
+    "height": 136
+  },
+  "/brands/gameloft.png": {
+    "width": 488,
+    "height": 136
+  },
+  "/brands/harrys.png": {
+    "width": 488,
+    "height": 136
+  },
+  "/brands/helix.png": {
+    "width": 488,
+    "height": 136
+  },
+  "/brands/holzkern.png": {
+    "width": 488,
+    "height": 136
+  },
+  "/brands/honey.png": {
+    "width": 488,
+    "height": 136
+  },
+  "/brands/keeps.png": {
+    "width": 488,
+    "height": 136
+  },
+  "/brands/manscaped.png": {
+    "width": 488,
+    "height": 136
+  },
+  "/brands/monster.png": {
+    "width": 488,
+    "height": 136
+  },
+  "/brands/opera.png": {
+    "width": 488,
+    "height": 136
+  },
+  "/brands/raycon.png": {
+    "width": 488,
+    "height": 136
+  },
+  "/brands/reeses.png": {
+    "width": 488,
+    "height": 136
+  },
+  "/brands/scentbird.png": {
+    "width": 488,
+    "height": 136
+  },
+  "/brands/supps.png": {
+    "width": 488,
+    "height": 136
+  },
+  "/creatorOwners/charlie.png": {
+    "width": 638,
+    "height": 740
+  },
+  "/creatorOwners/gibi.png": {
+    "width": 638,
+    "height": 740
+  },
+  "/creatorOwners/jim.png": {
+    "width": 638,
+    "height": 740
+  },
+  "/creatorOwners/jimmy.png": {
+    "width": 319,
+    "height": 370
+  },
+  "/creatorOwners/wendi-owner.png": {
+    "width": 638,
+    "height": 740
+  },
+  "/creatorOwners/wendi.png": {
+    "width": 957,
+    "height": 1110
+  },
+  "/creatorOwners/wendig.png": {
+    "width": 736,
+    "height": 982
+  },
+  "/impact-logo.png": {
+    "width": 512,
+    "height": 57
+  },
+  "/manathon.jpg": {
+    "width": 839,
+    "height": 474
+  },
+  "/summer-wishes.png": {
+    "width": 396,
+    "height": 512
+  },
+  "/talent/billiam.png": {
+    "width": 651,
+    "height": 651
+  },
+  "/talent/bionicpig.png": {
+    "width": 651,
+    "height": 651
+  },
+  "/talent/blameitonjorge.png": {
+    "width": 651,
+    "height": 651
+  },
+  "/talent/cadabier.png": {
+    "width": 651,
+    "height": 651
+  },
+  "/talent/charlie.png": {
+    "width": 638,
+    "height": 638
+  },
+  "/talent/cityplannerplays.png": {
+    "width": 651,
+    "height": 651
+  },
+  "/talent/coldones.png": {
+    "width": 638,
+    "height": 638
+  },
+  "/talent/creepcast.jpeg": {
+    "width": 640,
+    "height": 640
+  },
+  "/talent/crispy_concords.png": {
+    "width": 651,
+    "height": 651
+  },
+  "/talent/dadsbeingdudes.jpeg": {
+    "width": 640,
+    "height": 640
+  },
+  "/talent/fitmc.png": {
+    "width": 638,
+    "height": 1278
+  },
+  "/talent/fox.png": {
+    "width": 638,
+    "height": 638
+  },
+  "/talent/gibi.png": {
+    "width": 638,
+    "height": 638
+  },
+  "/talent/glow.png": {
+    "width": 1278,
+    "height": 1278
+  },
+  "/talent/goodnightmoon.png": {
+    "width": 638,
+    "height": 638
+  },
+  "/talent/gronks.png": {
+    "width": 1278,
+    "height": 638
+  },
+  "/talent/howtobasic.png": {
+    "width": 638,
+    "height": 638
+  },
+  "/talent/hugbees.png": {
+    "width": 651,
+    "height": 651
+  },
+  "/talent/indiemaus.png": {
+    "width": 651,
+    "height": 651
+  },
+  "/talent/jimmy.png": {
+    "width": 638,
+    "height": 638
+  },
+  "/talent/jocieb.png": {
+    "width": 651,
+    "height": 651
+  },
+  "/talent/krisyee.png": {
+    "width": 1278,
+    "height": 1278
+  },
+  "/talent/linkus7.png": {
+    "width": 651,
+    "height": 651
+  },
+  "/talent/lukeafk.png": {
+    "width": 651,
+    "height": 651
+  },
+  "/talent/lunabloom.png": {
+    "width": 651,
+    "height": 651
+  },
+  "/talent/mightykeef.png": {
+    "width": 651,
+    "height": 651
+  },
+  "/talent/noodle.png": {
+    "width": 638,
+    "height": 638
+  },
+  "/talent/nuxtaku.png": {
+    "width": 638,
+    "height": 638
+  },
+  "/talent/omni.png": {
+    "width": 651,
+    "height": 651
+  },
+  "/talent/ordinary_sausage.png": {
+    "width": 651,
+    "height": 651
+  },
+  "/talent/phillion.png": {
+    "width": 638,
+    "height": 638
+  },
+  "/talent/raffytaphy.png": {
+    "width": 1278,
+    "height": 638
+  },
+  "/talent/rdcworld.png": {
+    "width": 1278,
+    "height": 1278
+  },
+  "/talent/saberspark.png": {
+    "width": 651,
+    "height": 651
+  },
+  "/talent/spoonkid_2.png": {
+    "width": 651,
+    "height": 651
+  },
+  "/talent/tfue.png": {
+    "width": 638,
+    "height": 638
+  },
+  "/talent/theirelandboys.png": {
+    "width": 1278,
+    "height": 638
+  },
+  "/talent/tiptoetingles.png": {
+    "width": 638,
+    "height": 638
+  },
+  "/talent/tmal.png": {
+    "width": 651,
+    "height": 651
+  },
+  "/talent/totallynotmark.png": {
+    "width": 638,
+    "height": 638
+  },
+  "/talent/trashtaste.png": {
+    "width": 638,
+    "height": 638
+  },
+  "/talent/unitedgamer.png": {
+    "width": 651,
+    "height": 651
+  },
+  "/talent/vintendo.png": {
+    "width": 651,
+    "height": 651
+  },
+  "/talent/vixella.png": {
+    "width": 1278,
+    "height": 1278
+  },
+  "/talent/wendigoon.png": {
+    "width": 1278,
+    "height": 1278
+  },
+  "/talent/xptolevel3.png": {
+    "width": 651,
+    "height": 651
+  },
+  "/team/Alex.png": {
+    "width": 638,
+    "height": 740
+  },
+  "/team/Ben.png": {
+    "width": 638,
+    "height": 740
+  },
+  "/team/Matt.png": {
+    "width": 638,
+    "height": 740
+  },
+  "/team/Zach.png": {
+    "width": 638,
+    "height": 740
+  }
+}
