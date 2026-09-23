@@ -1,3 +1,4 @@
+import ContentImage from "./ContentImage";
 import Columns from "./Columns";
 import Youtube from "../public/svgs/youtube";
 import IG from "../public/svgs/ig";
@@ -503,8 +504,11 @@ const TalentGrid = () => {
                     `}
                     onMouseEnter={handleMouseOver}
                     onMouseLeave={handleMouseOut}>
-                    <img
+                    <ContentImage
                       src={imgUrl}
+                      alt={name}
+                      fill
+                      sizes={idx === 0 || idx === 1 || idx === 9 || idx === 10 || idx === 17 ? "(max-width: 1439px) 50vw, 640px" : "(max-width: 767px) 50vw, (max-width: 1439px) 25vw, 320px"}
                       className="absolute inset-0 z-10 object-cover object-center w-full h-full transition-all duration-300 grayscale"
                     />
                     <p className="absolute z-20 text-xl leading-none text-white uppercase transition-all duration-300 pointer-events-none condensed bottom-3 left-3 text-light">

@@ -1,3 +1,4 @@
+import ContentImage from "./ContentImage";
 import { useState, useEffect } from "react";
 
 const CreatorOwners = () => {
@@ -63,7 +64,7 @@ const CreatorOwners = () => {
   return (
     <div className="relative z-40 px-4 py-12 sm:flex lg:px-16 xl:px-20 sm:pb-24 lg:py-32">
       <div className="relative grid w-full grid-cols-1 grid-rows-1 mb-6 lg:flex lg:w-3/4">
-        {creatorOwners.map(({ imgURL }, idx) => {
+        {creatorOwners.map(({ imgURL, name }, idx) => {
           return (
             <div
               key={idx}
@@ -73,8 +74,10 @@ const CreatorOwners = () => {
               onClick={() => {
                 handleClick(idx);
               }}>
-              <img
+              <ContentImage
                 src={imgURL}
+                alt={name}
+                sizes="(max-width: 639px) 100vw, (max-width: 1023px) 75vw, 320px"
                 className={`w-full h-auto ${
                   idx === selectedIndex ? "" : "grayscale"
                 }`}

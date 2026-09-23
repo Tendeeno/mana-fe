@@ -1,3 +1,4 @@
+import ContentImage from "./ContentImage";
 import Columns from './Columns'
 
 const ExecTeam = ({ setOpenExecModal, setCurrentExec }) => {
@@ -76,7 +77,7 @@ const ExecTeam = ({ setOpenExecModal, setCurrentExec }) => {
                   onMouseOver={handleMouseOver}
                   onClick={() => {handleclick(idx)}}
                 >
-                  <img src={imgURL} className={`w-full h-auto grayscale`} />
+                  <ContentImage src={imgURL} alt={name} sizes="(max-width: 767px) 100vw, (max-width: 1439px) 25vw, 320px" className={`w-full h-auto grayscale`} />
                   <p className="text-white uppercase text-xl leading-none condensed absolute bottom-3 z-20 left-3 text-light pointer-events-none transition-all duration-300">{name}</p>
                   <div id="creator-stats" className="flex opacity-0 transition-all duration-300 absolute z-30 left-3 right-3 bottom-3 justify-between">
                     <span className="flex pr-2 text-white text-base condensed font-semibold">{position}</span>

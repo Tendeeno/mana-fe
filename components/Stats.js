@@ -1,3 +1,4 @@
+import ContentImage from "./ContentImage";
 import Columns from "./Columns";
 import { useEffect, useState } from "react";
 
@@ -22,14 +23,8 @@ const Stats = () => {
     { brand: "AG1", imgURL: "/brands/ag1.png" },
   ];
 
-  const [activeLogos, setActiveLogos] = useState([
-    { brand: "Helix", imgURL: "" },
-    { brand: "Keeps", imgURL: "" },
-    { brand: "Manscaped", imgURL: "" },
-    { brand: "Raycon", imgURL: "" },
-  ]);
-
   const [currentIteration, setCurrentIteration] = useState(0);
+  const activeLogos = logos.slice(currentIteration * 4, currentIteration * 4 + 4);
 
   const statistics = [
     { label: "campaigns", value: "1,000+" },
@@ -38,26 +33,12 @@ const Stats = () => {
     { label: "ytd deals signed", value: "2,000+" },
   ];
 
-  const rotateLogos = () => {
-    let newLogos;
-    if (currentIteration === 0) {
-      newLogos = logos.slice(0, 4);
-      setCurrentIteration(1);
-    } else if (currentIteration === 1) {
-      newLogos = logos.slice(4, 8);
-      setCurrentIteration(2);
-    } else if (currentIteration === 2) {
-      newLogos = logos.slice(8, 12);
-      setCurrentIteration(0);
-    }
-    setActiveLogos(newLogos);
-  };
-
   useEffect(() => {
-    console.log("runningtimeout");
-    let timer = setTimeout(rotateLogos, 6000);
-    return () => clearTimeout(timer);
-  }, [currentIteration]);
+    const timer = setInterval(() => {
+      setCurrentIteration((index) => (index + 1) % 3);
+    }, 6000);
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <div className="relative bg-dark">
@@ -73,8 +54,10 @@ const Stats = () => {
             {activeLogos.map(({ brand, imgURL }, idx) => {
               return (
                 <div key={idx} className={`text-left w-full`}>
-                  <img
+                  <ContentImage
                     src={imgURL}
+                    alt={brand}
+                    sizes="(max-width: 639px) 140px, (max-width: 767px) 180px, (max-width: 1279px) 140px, 214px"
                     className="w-full h-auto mb-6 md:mb-0 max-w-[140px] sm:max-w-[180px] md:max-w-[140px] xl:max-w-[214px]"
                   />
                   {/* <span className="block text-lg font-bold uppercase md:text-3xl text-gray-text">{brand}</span> */}

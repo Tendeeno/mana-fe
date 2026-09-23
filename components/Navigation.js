@@ -1,6 +1,18 @@
 import ManaLogo from "../public/svgs/manalogo"
+import { useEffect } from "react"
 
 const Navigation = () => {
+  useEffect(() => {
+    const updateScroll = () => {
+      document.documentElement.dataset.scrolled = String(window.scrollY > 100)
+    }
+    updateScroll()
+    window.addEventListener('scroll', updateScroll, { passive: true })
+    return () => {
+      window.removeEventListener('scroll', updateScroll)
+      delete document.documentElement.dataset.scrolled
+    }
+  }, [])
 
   const navItems = [
     { text: 'about', href: '#About', type: 'text' },
@@ -23,9 +35,8 @@ const Navigation = () => {
                 if (type === 'text') {
                   return (
                     <a
-                      id="nav-item"
                       key={idx}
-                      className={`text-xl sm:text-2xl sm:min-w-[100px] font-normal uppercase text-white opacity-0 transition-opacity duration-500
+                      className={`nav-item nav-link text-base sm:text-2xl sm:min-w-[100px] font-normal uppercase text-white transition-opacity duration-500
                         ${idx === 0 && idx !== 4 ? 'text-left' : 'text-center'}
                         ${idx === 4 ? 'text-right' : ''}
                       `}
@@ -36,6 +47,8 @@ const Navigation = () => {
                   return (
                     <a 
                       key={idx}
+                      className="nav-link nav-logo"
+                      aria-label="Back to top"
                       href={href}>
                       <ManaLogo />
                     </a>
