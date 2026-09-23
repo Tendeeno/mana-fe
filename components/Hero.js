@@ -21,11 +21,7 @@ const Hero = () => {
     let idleCallback;
     let timeout;
     const loadVideo = () => {
-      setVideoSrc(
-        window.matchMedia("(max-width: 767px)").matches
-          ? "/videos/hero-bg-mobile.mp4"
-          : "/videos/hero-bg.mp4"
-      );
+      setVideoSrc("/videos/hero-bg.mp4");
     };
     const scheduleVideo = () => {
       // Keep the video out of the initial document and critical loading path.
